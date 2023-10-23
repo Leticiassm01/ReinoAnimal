@@ -1,16 +1,19 @@
 package ReinoAnimal;
 
 public class Animal {
-	public String especie;
-	public String sexo;
-	public String dataNascimento;
-	public int contador=0;
-
-	public Animal(String especie, String sexo, String dataNascimento, int contador) {
+	private String especie;
+	private String sexo;
+	private String dataNascimento;
+	private static int contador=0;
+	
+	public Animal() {
+		
+	}
+	public Animal(String especie, String sexo, String dataNascimento) {
 		this.sexo = sexo;
 		this.especie = especie;
 		this.dataNascimento = dataNascimento;
-		this.contador = contador;
+		this.contador = this.contador + 1;
 		contadorPriv();
 	}
 

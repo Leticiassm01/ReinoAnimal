@@ -1,36 +1,45 @@
 package ReinoAnimal;
-
+/*
+ * @author lele
+ * essa classe representa um animal
+ */
 public class Animal {
-	private String especie;
-	private String sexo;
-	private String dataNascimento;
-	private static int contador=0;
+	 String especie;
+	 String sexo;
+	 String dataNascimento;
+	 static int contador=0;
 	
-	public Animal() {
-		
-	}
+
 	public Animal(String especie, String sexo, String dataNascimento) {
 		this.sexo = sexo;
 		this.especie = especie;
 		this.dataNascimento = dataNascimento;
-		this.contador = this.contador + 1;
 		contadorPriv();
 	}
-
+	@Override
+	public String toString() {
+		return "Animal [especie=" + especie + ", sexo=" + sexo + ", nascimento=" + dataNascimento + ", contador=" + contador
+				+ "]";
+	}
 	public void comer() {
 		System.out.println("O ANIMAL ESTÁ COMENDO.");
 	}
 
 	public void perfil() {
+		/**
+		 * 
+		 * Imprime os dados do animal
+		 * 
+		 */
 		System.out.println("O sexo do animal é:"+ sexo);
 		System.out.println("A espécie do animal é: "+ especie);
 		System.out.println("A data de nascimento do animal : " + dataNascimento);
 		
 	}
-	private void contadorPriv() {
+	private static void contadorPriv() {
 		contador++;
 	}
-	public void mostrarContador() {
+	public void qtdAnimais() {
 		System.out.println("A qtd de animais é " + contador);
 	}
 

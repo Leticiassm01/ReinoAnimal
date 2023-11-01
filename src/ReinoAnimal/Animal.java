@@ -1,14 +1,14 @@
 package ReinoAnimal;
+
 /*
  * @author lele
  * essa classe representa um animal
  */
 public class Animal {
-	 String especie;
-	 String sexo;
-	 String dataNascimento;
-	 static int contador=0;
-	
+	private String especie;
+	private String sexo;
+	private String dataNascimento;
+	private static int contador = 0;
 
 	public Animal(String especie, String sexo, String dataNascimento) {
 		this.sexo = sexo;
@@ -16,11 +16,13 @@ public class Animal {
 		this.dataNascimento = dataNascimento;
 		contadorPriv();
 	}
+
 	@Override
 	public String toString() {
-		return "Animal [especie=" + especie + ", sexo=" + sexo + ", nascimento=" + dataNascimento + ", contador=" + contador
-				+ "]";
+		return "Animal [especie=" + especie + ", sexo=" + sexo + ", nascimento=" + dataNascimento + ", contador="
+				+ contador + "]";
 	}
+
 	public void comer() {
 		System.out.println("O ANIMAL ESTÁ COMENDO.");
 	}
@@ -31,14 +33,16 @@ public class Animal {
 		 * Imprime os dados do animal
 		 * 
 		 */
-		System.out.println("O sexo do animal é:"+ sexo);
-		System.out.println("A espécie do animal é: "+ especie);
+		System.out.println("O sexo do animal é:" + sexo);
+		System.out.println("A espécie do animal é: " + especie);
 		System.out.println("A data de nascimento do animal : " + dataNascimento);
-		
+
 	}
+
 	private static void contadorPriv() {
 		contador++;
 	}
+
 	public void qtdAnimais() {
 		System.out.println("A qtd de animais é " + contador);
 	}
@@ -74,5 +78,5 @@ public class Animal {
 	public void setContador(int contador) {
 		this.contador = contador;
 	}
-	
+
 }

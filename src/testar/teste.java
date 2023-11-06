@@ -7,11 +7,11 @@ import ReinoAnimal.Terrestre;
 public class teste {
 	public static void main(String[] args) {
 		
-		Aquatico aquatico1 = new Aquatico("Carcharias taurus", "fêmea","7", "água salgada", false);
+		Aquatico aquatico1 = new Aquatico("Carcharias taurus", "fEmea","7", "Agua salgada", false);
 		Aquatico aquatico2 = new Aquatico("Pygocentrus nattereri", "macho","3", "água doce", true);
 		
 		
-		Terrestre terrestre1 = new Terrestre("Felis Catus", "fêmea", "20", "Ásia", true);
+		Terrestre terrestre1 = new Terrestre("Felis Catus", "fEmea", "20", "Asia", true);
 		Terrestre terrestre2 = new Terrestre("Hydrochoerus hydrochaeris", "macho","8", "America do Sul", true);
 		
 		

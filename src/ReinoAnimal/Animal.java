@@ -24,7 +24,7 @@ public class Animal {
 	}
 
 	public void comer() {
-		System.out.println("O ANIMAL ESTÁ COMENDO.");
+		System.out.println("O ANIMAL ESTA COMENDO.");
 	}
 
 	public void perfil() {
